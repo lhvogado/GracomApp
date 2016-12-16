@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:id="@+id/rowLayout"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TextView
+        android:id="@+id/tituloNoticia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:gravity="right"
+        android:text="Endereco"
+        android:textStyle="normal|bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/corpoNoticia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tituloNoticia"
+        android:text="Telefone"
+        />
+    <TextView
+        android:id="@+id/dataNoticia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/corpoNoticia"
+        android:text="Telefone"
+        android:textStyle="italic" />
+
+</RelativeLayout>
