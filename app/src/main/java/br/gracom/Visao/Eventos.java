@@ -17,7 +17,6 @@ import br.gracom.R;
 
 public class Eventos extends Activity {
 
-
     private SQLiteDatabase database;
 
     ListView listView2;
@@ -52,8 +51,8 @@ public class Eventos extends Activity {
                 String codigo;
                 cursor.moveToPosition(position);
                 codigo = cursor.getString(cursor.getColumnIndexOrThrow(BaseDAO.EVENTOS_ID));
-                Intent intent = new Intent(Eventos.this, Detalhes_noticias.class);
-                //intent.putExtra("codigo", codigo);
+                Intent intent = new Intent(Eventos.this, Detalhes_Eventos.class);
+                intent.putExtra("codigo", codigo);
                 startActivity(intent);
                 finish();
             }
@@ -63,14 +62,19 @@ public class Eventos extends Activity {
     public void btnEventos(View v){
         Intent intent = new Intent(this, Eventos.class);
         startActivity(intent);
-        onDestroy();
     }
     public void btnInserir_Click(View v){
         //insere dados no banco de dados
         database.execSQL("INSERT INTO eventos (titulo_evento, corpo_evento, data_evento) VALUES " +
-                "('Promoção de natal', 'A GRACOM está iniciando um novo curso de web voltado para o desenvolvimento de sites e também de games.', '14/12/2016')");
-        //database.execSQL("INSERT INTO agenda (nome, endereco, telefone) VALUES " +
-        //        "('Projeto Teste', 'Av. Brasil, 500', '(12)3456-78901')");
+                "('Promoção de natal', 'A GRACOM está iniciando um novo curso de web voltado para o desenvolvimento de sites e também de games.', '16/12/2016')");
+        database.execSQL("INSERT INTO eventos (titulo_evento, corpo_evento, data_evento) VALUES " +
+                "('Minicurso de natal', 'Minicurso de natal nos dias 15 e 16 de dezembro na sala G2. Além do Minicurso, também terão aulas extras os alunos que faltaram.', '14/12/2016')");
+        database.execSQL("INSERT INTO eventos (titulo_evento, corpo_evento, data_evento) VALUES " +
+                "('Atenção alunos', 'Entre os dias 24 de dezembro e 01 de janeiro não haverá aulas na gracom teresina, durante a semana haverá workshops e campeonatos abertos ao públicos, partice!.', '13/12/2016')");
+        database.execSQL("INSERT INTO eventos (titulo_evento, corpo_evento, data_evento) VALUES " +
+                "('Hollywood Premiada', 'A Gracom Teresina e Goiânia levam você para HOLLYWOOD! Só quem é aluno Gracom tem a chance de ganhar essa super viagem para Los Angeles com direito a visitar a maior escola....', '14/12/2016')");
+
+
 
         Toast.makeText(this, "Registros inseridos com sucesso", Toast.LENGTH_SHORT).show();
         //String cpf = this.getIntent().getStringExtra("cpf");

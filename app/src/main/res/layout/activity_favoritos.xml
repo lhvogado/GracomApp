@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listaFAVORITOS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:background="#faa301">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo_gracom"
+            android:layout_marginLeft="-20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="84dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#faa301"
+        android:id="@+id/linearLayout4">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnInserir"
+            android:layout_gravity="right"
+            android:onClick="btnInserir_Click"
+            android:background="@drawable/icon_add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout3"
+        android:background="#a9a9a9"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnVisual"
+            android:onClick="btnVisual"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_action_select_all" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout5"
+        android:background="#a9a9a9"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout4"
+        android:layout_alignEnd="@+id/linearLayout4">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/button3"
+            android:onClick="btnFavoritos_Click"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_action_important" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout6"
+        android:background="#a9a9a9"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnEventos"
+            android:onClick="btnEventos"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/ic_action_event" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

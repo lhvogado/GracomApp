@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_gracom"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -19,7 +19,9 @@
         <activity
             android:name=".Visao.Eventos"
             android:label="@string/title_activity_eventos"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Visao.Detalhes_Eventos" />
+        <activity android:name=".Visao.Favoritos"></activity>
     </application>
 
 </manifest>

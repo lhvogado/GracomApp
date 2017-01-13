@@ -1,6 +1,8 @@
 package br.gracom.Visao;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 
 import android.app.Activity;
@@ -11,6 +13,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
+
+import java.io.ByteArrayOutputStream;
 
 import br.gracom.Persistencia.BancoControle;
 import br.gracom.Persistencia.BaseDAO;
@@ -63,14 +67,22 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, Eventos.class);
         startActivity(intent);
     }
+    public void btnFavoritos(View v){
+        Intent intent = new Intent(this, Favoritos.class);
+        startActivity(intent);
+    }
        public void btnInserir_Click(View v){
             //insere dados no banco de dados
-           database.execSQL("INSERT INTO noticias (titulo, corpo, data) VALUES " +
-                   "('Curso de webdesing', 'A GRACOM está iniciando um novo curso de web voltado para o desenvolvimento de sites e também de games.', '11/12/2016')");
-            //database.execSQL("INSERT INTO agenda (nome, endereco, telefone) VALUES " +
-            //        "('Projeto Teste', 'Av. Brasil, 500', '(12)3456-78901')");
+           database.execSQL("INSERT INTO noticias (titulo, corpo, data, star) VALUES " +
+                   "('Curso de webdesing', 'A GRACOM está iniciando um novo curso de web voltado para o desenvolvimento de sites e também de games.', '16/12/2016', '0')");
+           database.execSQL("INSERT INTO noticias (titulo, corpo, data, star) VALUES " +
+                   "('Filme de aluno da gracom', 'O nosso aluno Paulo Eduardo está gravando um filme bem criativo na sua cidade, Dermeval Lobão, confira o trailer.', '13/12/2016', '0')");
+           database.execSQL("INSERT INTO noticias (titulo, corpo, data, star) VALUES " +
+                   "('Professores aprovados', 'A Gracom tem o orgulho de Parabenizar os nossos professores Anne Fortes, Ivan Magalhães e Antônio Carlos pela conquista.', '11/12/2016', '0')");
+           database.execSQL("INSERT INTO noticias (titulo, corpo, data, star) VALUES " +
+                   "('Curso de webdesing', 'A GRACOM está iniciando um novo curso de web voltado para o desenvolvimento de sites e também de games.', '11/12/2016', '0')");
 
-            Toast.makeText(this, "Registros inseridos com sucesso", Toast.LENGTH_SHORT).show();
+           Toast.makeText(this, "Registros inseridos com sucesso", Toast.LENGTH_SHORT).show();
            //String cpf = this.getIntent().getStringExtra("cpf");
            //String codigo = "telaNovaPlaca";
            Intent intent = new Intent(this, MainActivity.class);
