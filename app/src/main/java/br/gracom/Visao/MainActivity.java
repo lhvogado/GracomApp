@@ -22,7 +22,7 @@ import br.gracom.R;
 
 public class MainActivity extends Activity {
     private SQLiteDatabase database;
-
+    //FirebaseStorage storage = FirebaseStorage.getInstance();
     ListView listView;
     BaseDAO helper;
 
@@ -62,6 +62,10 @@ public class MainActivity extends Activity {
             }
         });
 
+    }
+    public void btnHome(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
     public void btnEventos(View v){
         Intent intent = new Intent(this, Eventos.class);

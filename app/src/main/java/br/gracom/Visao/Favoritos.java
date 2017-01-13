@@ -56,5 +56,17 @@ public class Favoritos extends AppCompatActivity {
         });
 
     }
+    public void btnHome(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+    public void btnEventos(View v){
+        Intent intent = new Intent(this, Eventos.class);
+        startActivity(intent);
+    }
+    public void btnFavoritos(View v){
+        Intent intent = new Intent(this, Favoritos.class);
+        startActivity(intent);
+    }
 
 }

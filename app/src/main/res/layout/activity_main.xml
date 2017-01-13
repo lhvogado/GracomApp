@@ -65,10 +65,10 @@ android:orientation="vertical" >
         <Button
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/btnVisual"
-            android:onClick="btnVisual"
+            android:id="@+id/btnHome"
+            android:onClick="btnHome"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/ic_action_select_all" />
+            android:background="@drawable/ic_action_storage2" />
 
     </LinearLayout>
 

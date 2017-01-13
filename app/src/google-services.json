@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "462051770066",
+    "firebase_url": "https://gracom-app.firebaseio.com",
+    "project_id": "gracom-app",
+    "storage_bucket": "gracom-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462051770066:android:1ae2e736ff234d3e",
+        "android_client_info": {
+          "package_name": "com.gracomapp.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462051770066-3q1bhru2tsda0uss7gvouc5rcs03m6ep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -40,6 +40,7 @@ public class Detalhes_noticias extends AppCompatActivity {
         ImageView imageView1;
 
 
+
         String[] nomeCampos = new String[] {BaseDAO.NOTICIA_TITULO, BaseDAO.NOTICIA_CORPO, BaseDAO.NOTICIA_DATA, BaseDAO.NOTICIA_FAVORITAR};
         int[] idViews = new int[] {R.id.titulo, R.id.corpo, R.id.data, R.id.star};
 

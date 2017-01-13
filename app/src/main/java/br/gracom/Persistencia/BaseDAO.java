@@ -24,11 +24,11 @@ public class BaseDAO extends SQLiteOpenHelper {
     public static final String EVENTO_TITULO = "titulo_evento";
     public static final String EVENTO_CORPO = "corpo_evento";
     public static final String EVENTO_DATA = "data_evento";
-    public static final String EVENTO_FAVORITAR = "star_evento";
-    public static final String EVENTO_FOTO = "foto_evento";
+    //public static final String EVENTO_FAVORITAR = "star_evento";
+    //public static final String EVENTO_FOTO = "foto_evento";
 
     private static final String DATABASE_NAME = "noticias.db";
-    private static final int DATABASE_VERSION = 13;
+    private static final int DATABASE_VERSION = 14;
 
     //Estrutura da tabela Agenda (sql statement)
     private static final String CREATE_NOTICIA = "create table " +
@@ -43,8 +43,8 @@ public class BaseDAO extends SQLiteOpenHelper {
             TBL_EVENTOS + "( " + EVENTOS_ID       + " integer primary key autoincrement, " +
             EVENTO_TITULO     + " text not null, " +
             EVENTO_CORPO + " text not null, " +
-            EVENTO_FAVORITAR + " text not null, " +
-            EVENTO_FOTO + " blob, " +
+            //EVENTO_FAVORITAR + " text not null, " +
+            //EVENTO_FOTO + " blob, " +
             EVENTO_DATA + " text not null);";
 
     public BaseDAO(Context context) {

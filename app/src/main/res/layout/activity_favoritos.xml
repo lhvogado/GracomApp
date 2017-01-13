@@ -56,7 +56,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="35dp"
         android:id="@+id/linearLayout3"
         android:background="#a9a9a9"
         android:layout_alignParentBottom="true"
@@ -65,17 +65,17 @@
         <Button
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:id="@+id/btnVisual"
-            android:onClick="btnVisual"
+            android:id="@+id/btnHome"
+            android:onClick="btnHome"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/ic_action_select_all" />
+            android:background="@drawable/ic_action_storage" />
 
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="128dp"
-        android:layout_height="50dp"
+        android:layout_height="35dp"
         android:id="@+id/linearLayout5"
         android:background="#a9a9a9"
         android:layout_alignParentBottom="true"
@@ -86,16 +86,16 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:id="@+id/button3"
-            android:onClick="btnFavoritos_Click"
+            android:onClick="btnFavoritos"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/ic_action_important" />
+            android:background="@drawable/ic_action_important2" />
 
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="128dp"
-        android:layout_height="50dp"
+        android:layout_height="35dp"
         android:id="@+id/linearLayout6"
         android:background="#a9a9a9"
         android:layout_alignParentBottom="true"

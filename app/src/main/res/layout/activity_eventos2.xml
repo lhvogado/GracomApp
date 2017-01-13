@@ -15,7 +15,7 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -28,7 +28,8 @@
             android:layout_height="50dp"
             android:id="@+id/imageView2"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/logo_gracom" />
+            android:background="@drawable/logo_gracom"
+            android:layout_marginLeft="-20dp" />
 
     </LinearLayout>
 
@@ -54,38 +55,38 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="128dp"
-        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
         android:id="@+id/linearLayout3"
-        android:background="#bebebe"
+        android:background="#a9a9a9"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true">
 
         <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/button2"
-            android:onClick="btnVisual_Click"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnHome"
+            android:onClick="btnHome"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/ic_action_select_all" />
+            android:background="@drawable/ic_action_storage" />
 
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="128dp"
-        android:layout_height="50dp"
+        android:layout_height="35dp"
         android:id="@+id/linearLayout5"
-        android:background="#bebebe"
+        android:background="#a9a9a9"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/linearLayout4"
         android:layout_alignEnd="@+id/linearLayout4">
 
         <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:id="@+id/button3"
-            android:onClick="btnFavoritos_Click"
+            android:onClick="btnFavoritos"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/ic_action_important" />
 
@@ -94,17 +95,16 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="128dp"
-        android:layout_height="50dp"
+        android:layout_height="35dp"
         android:id="@+id/linearLayout6"
-        android:background="#bebebe"
+        android:background="#a9a9a9"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
         <Button
-            android:layout_width="50dp"
-
-            android:layout_height="50dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:id="@+id/btnEventos"
             android:onClick="btnEventos"
             android:layout_marginLeft="40dp"
